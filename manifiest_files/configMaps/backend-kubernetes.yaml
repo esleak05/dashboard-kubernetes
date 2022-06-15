@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: backend-kubernetes-config
 data:
-  ASPNETCORE_ENVIRONMENT: QA
+  ASPNETCORE_ENVIRONMENT: "QA"
 
