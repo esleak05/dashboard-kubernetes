@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-kubernetes-pod
+  labels:
+    name: backend-kubernetes-pod
+    type: services
+    tier: backend
+    app: kubernetes-app
+spec: 
+  containers:
+    - name: backend-kubernetes
+      image: esleak/kubernetes-api:1.0.2
+      ports:
+        - containerPort: 80
+      envFrom:
+        - configMapRef:
+            name: backend-kubernetes-config 
+        - secretRef:
+            name: kubernetes-api-token-fm7qh
+  serviceAccount: kubernetes-api

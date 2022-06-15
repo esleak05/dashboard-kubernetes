@@ -1,0 +1,20 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  kubernetes-api:
+    image: backend.kubernetes:qa
+    container_name: backend-kubernetes
+    build:
+      context: ./API/
+      dockerfile: Backend.Kubernetes.API/Dockerfile
+    ports:
+      - 5200:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=QA
+
+
+
+
+

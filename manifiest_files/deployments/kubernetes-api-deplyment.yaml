@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+     name: kubernetes-api-deployment
+     labels:
+       name: kubernetes-api-deployment
+       app: kubernetes-api
+spec:
+  replicas: 1
+  selector:
+      matchLabels:
+          name: kubernetes-api-pod
+          type: services
+          tier: api
+          app: kubernetes-app
+  template:
+     metadata:
+      name: kubernetes-api-pod
+      labels:
+        name: kubernetes-api-pod
+        type: services
+        tier: api
+        app: kubernetes-app
+     spec:
+        containers:
+            - name: kubernetes-api
+              image: esleak/kubernetes-api:1.0.2
+              ports:
+                 - containerPort: 80
+              envFrom:
+                   - configMapRef:
+                       name: backend-kubernetes-config
+                          #- secretRef:
+                          # name: kubernetes-api-token-fm7qh
+        serviceAccount: kubernetes-api
+
+

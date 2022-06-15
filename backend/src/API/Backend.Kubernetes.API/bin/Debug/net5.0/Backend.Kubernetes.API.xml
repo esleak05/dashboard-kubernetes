@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Backend.Kubernetes.API</name>
+    </assembly>
+    <members>
+        <member name="M:Backend.Kubernetes.API.Application.Utils.RutUtils.GetRut(System.String)">
+            <summary>
+            Limpia y separa el rut y dv, no Valida el rut
+            </summary>
+            <param name="rutWithDv">Rut con digito verificador</param>
+            <returns>rut integer</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Backend.Kubernetes.API.Controllers.PodController.GetByNamespace(System.String)">
+            <summary>
+            get information of all pod in the cluster
+            </summary>
+            <param name="ns">namespace inside of kubernetes Cluster</param>
+            <returns>Pods</returns>
+        </member>
+        <member name="M:Backend.Kubernetes.API.Persistence.Repository.MandatoRepository.HasSpouse(System.Int32,System.Int32)">
+            <summary>
+            Valida si un cliente tiene un beneficiario tipo conyuge
+            </summary>
+            <param name="productCode"> Codigo de producto </param>
+            <param name="insurancePolicy"> Numero de poliza </param>
+            <returns>true o false</returns>
+        </member>
+    </members>
+</doc>

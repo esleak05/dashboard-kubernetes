@@ -1,0 +1,117 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/esleak/Repository/kubernetes/proyects/alcancia_app/kubernetes-app/backend/src/API/Backend.Kubernetes.API/Backend.Kubernetes.API.csproj": {}
+  },
+  "projects": {
+    "/home/esleak/Repository/kubernetes/proyects/alcancia_app/kubernetes-app/backend/src/API/Backend.Kubernetes.API/Backend.Kubernetes.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/esleak/Repository/kubernetes/proyects/alcancia_app/kubernetes-app/backend/src/API/Backend.Kubernetes.API/Backend.Kubernetes.API.csproj",
+        "projectName": "Backend.Kubernetes.API",
+        "projectPath": "/home/esleak/Repository/kubernetes/proyects/alcancia_app/kubernetes-app/backend/src/API/Backend.Kubernetes.API/Backend.Kubernetes.API.csproj",
+        "packagesPath": "/home/esleak/.nuget/packages/",
+        "outputPath": "/home/esleak/Repository/kubernetes/proyects/alcancia_app/kubernetes-app/backend/src/API/Backend.Kubernetes.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/esleak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "KubernetesClient": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[3.21.4, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "itext7.pdfhtml": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

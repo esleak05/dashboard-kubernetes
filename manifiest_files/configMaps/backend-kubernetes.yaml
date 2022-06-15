@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-kubernetes-config
+data:
+  ASPNETCORE_ENVIRONMENT: QA
+
