@@ -1,1 +1,3 @@
 # dashboard-kubernetes
+
+Instalación
